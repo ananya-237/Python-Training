@@ -1,0 +1,8 @@
+s = "abbaca"
+stack = []
+for val in s:
+    if stack and val == stack[-1]:
+        stack.pop()
+    else:
+        stack.append(val)
+print(''.join(stack))
